@@ -10,7 +10,6 @@
 		C96B879F18B1478700C398E7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C96B879E18B1478700C398E7 /* Cocoa.framework */; };
 		C9AE3A9618B017E900559C0E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9AE3A9518B017E900559C0E /* Foundation.framework */; };
 		C9AE3A9918B017E900559C0E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9AE3A9818B017E900559C0E /* main.m */; };
-		C9AE3A9D18B017E900559C0E /* ApplyMask.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C9AE3A9C18B017E900559C0E /* ApplyMask.1 */; };
 		C9AE3AA418B01D7900559C0E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9AE3AA318B01D7900559C0E /* CoreGraphics.framework */; };
 		C9AE3AA618B01D8600559C0E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9AE3AA518B01D8600559C0E /* QuartzCore.framework */; };
 		C9AE3AA818B020E400559C0E /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9AE3AA718B020E400559C0E /* AppKit.framework */; };
@@ -23,7 +22,6 @@
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
-				C9AE3A9D18B017E900559C0E /* ApplyMask.1 in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
@@ -35,7 +33,6 @@
 		C9AE3A9518B017E900559C0E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C9AE3A9818B017E900559C0E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C9AE3A9B18B017E900559C0E /* ApplyMask-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ApplyMask-Prefix.pch"; sourceTree = "<group>"; };
-		C9AE3A9C18B017E900559C0E /* ApplyMask.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = ApplyMask.1; sourceTree = "<group>"; };
 		C9AE3AA318B01D7900559C0E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		C9AE3AA518B01D8600559C0E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		C9AE3AA718B020E400559C0E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -90,7 +87,6 @@
 			isa = PBXGroup;
 			children = (
 				C9AE3A9818B017E900559C0E /* main.m */,
-				C9AE3A9C18B017E900559C0E /* ApplyMask.1 */,
 				C9AE3A9A18B017E900559C0E /* Supporting Files */,
 			);
 			path = ApplyMask;

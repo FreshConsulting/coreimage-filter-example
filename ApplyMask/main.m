@@ -101,7 +101,11 @@ CFDataRef imageDataCreateFromFile(const char *path, CGSize *imageSize)
 
 CGImageRef imageRefCreateFromBytes(UInt8 *bytes, size_t totalBytes, CGSize imageSize)
 {
-    //Since we have a premutiplied alpha context, do the premultiply
+    //When you create a bitmap context, if you want RGBA you have to have premultiplied alpha.
+    //See this table for details of supported pixel formats: https://developer.apple.com/library/mac/documentation/GraphicsImaging/Conceptual/drawingwithquartz2d/dq_context/dq_context.html#//apple_ref/doc/uid/TP30001066-CH203-BCIBHHBB
+    //Since the context expects premultiplied alpha, we have to multiply pixel values by an alpha factor before
+    //creating the context
+    
     UInt8 *premultipliedBuffer = calloc(totalBytes, 1);
     memcpy(premultipliedBuffer, bytes, totalBytes);
     for (int i = 0; i < totalBytes; i += 4)
